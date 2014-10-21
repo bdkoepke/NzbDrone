@@ -49,7 +49,7 @@ namespace NzbDrone.Integration.Test
             config.AnimeEpisodeFormat = "{Series Title} - {season}x{episode:00} - {Episode Title}";
 
             var errors = NamingConfig.InvalidPut(config);
-            errors.Should().NotBeEmpty();
+			errors.Should<dynamic>().NotBeEmpty();
         }
 
         [Test]
@@ -62,7 +62,7 @@ namespace NzbDrone.Integration.Test
             config.AnimeEpisodeFormat = "{Series Title} - {season}x{episode:00} - {Episode Title}";
 
             var errors = NamingConfig.InvalidPut(config);
-            errors.Should().NotBeEmpty();
+            errors.Should<dynamic>().NotBeEmpty();
         }
 
         [Test]
@@ -75,7 +75,7 @@ namespace NzbDrone.Integration.Test
             config.AnimeEpisodeFormat = "{Series Title} - {season}x{episode:00} - {Episode Title}";
 
             var errors = NamingConfig.InvalidPut(config);
-            errors.Should().NotBeEmpty();
+            errors.Should<dynamic>().NotBeEmpty();
         }
 
         [Test]
@@ -88,7 +88,7 @@ namespace NzbDrone.Integration.Test
             config.AnimeEpisodeFormat = "{Series Title} - {season} - {Episode Title}";
 
             var errors = NamingConfig.InvalidPut(config);
-            errors.Should().NotBeEmpty();
+            errors.Should<dynamic>().NotBeEmpty();
         }
 
         [Test]
@@ -100,7 +100,7 @@ namespace NzbDrone.Integration.Test
             config.DailyEpisodeFormat = "";
 
             var errors = NamingConfig.InvalidPut(config);
-            errors.Should().NotBeEmpty();
+            errors.Should<dynamic>().NotBeEmpty();
         }
 
         [Test]
@@ -112,7 +112,7 @@ namespace NzbDrone.Integration.Test
             config.DailyEpisodeFormat = "";
 
             var errors = NamingConfig.InvalidPut(config);
-            errors.Should().NotBeEmpty();
+            errors.Should<dynamic>().NotBeEmpty();
         }
 
         [Test]
@@ -123,7 +123,7 @@ namespace NzbDrone.Integration.Test
             config.SeriesFolderFormat = "This and That";
 
             var errors = NamingConfig.InvalidPut(config);
-            errors.Should().NotBeEmpty();
+            errors.Should<dynamic>().NotBeEmpty();
         }
     }
 }
