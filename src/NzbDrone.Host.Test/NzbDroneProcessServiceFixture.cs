@@ -7,7 +7,7 @@ using NzbDrone.Common.Processes;
 using NzbDrone.Host;
 using NzbDrone.Test.Common;
 
-namespace NzbDrone.App.Test
+namespace NzbDrone.Host.Test
 {
     [TestFixture]
     public class NzbDroneProcessServiceFixture : TestBase<SingleInstancePolicy>

@@ -6,7 +6,7 @@ using NzbDrone.Common.EnvironmentInfo;
 using NzbDrone.Host;
 using NzbDrone.Test.Common;
 
-namespace NzbDrone.App.Test
+namespace NzbDrone.Host.Test
 {
     [TestFixture]
     public class RouterTest : TestBase<Router>

@@ -13,7 +13,7 @@ using NzbDrone.Test.Common;
 using FluentAssertions;
 using System.Linq;
 
-namespace NzbDrone.App.Test
+namespace NzbDrone.Host.Test
 {
     [TestFixture]
     public class ContainerFixture : TestBase
