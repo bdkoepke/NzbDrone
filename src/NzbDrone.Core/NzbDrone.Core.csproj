@@ -160,7 +160,7 @@
     <Compile Include="Datastore\Extensions\RelationshipExtensions.cs" />
     <Compile Include="Datastore\IEmbeddedDocument.cs" />
     <Compile Include="Datastore\LazyList.cs" />
-    <Compile Include="Datastore\Migration\001_initialSetup.cs" />
+    <Compile Include="Datastore\Migration\001_initial_setup.cs" />
     <Compile Include="Datastore\Migration\002_remove_tvrage_imdb_unique_constraint.cs" />
     <Compile Include="Datastore\Migration\003_remove_clean_title_from_scene_mapping.cs" />
     <Compile Include="Datastore\Migration\004_updated_history.cs" />
@@ -823,9 +823,9 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="..\..\Logo\64.png">
-      <Link>Resources\Logo\64.png</Link>
-    </EmbeddedResource>
+    <Content Include="..\..\Logo\64.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="MediaInfo.dll">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
