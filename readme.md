@@ -1,11 +1,11 @@
-# NzbDrone #
+# Sonarr #
 
 
-NZBDrone is a PVR for newsgroup users. It can monitor multiple RSS feeds for new episodes of your favourite shows and will grab, sorts and renames them. It can also be configured to automatically upgrade the quality of files already downloaded if a better quality format becomes available.
+Sonarr is a PVR for newsgroup users. It can monitor multiple RSS feeds for new episodes of your favourite shows and will grab, sorts and renames them. It can also be configured to automatically upgrade the quality of files already downloaded if a better quality format becomes available.
 
 ## Major Features Include: ##
 
-* Support for major platforms: Windows, Linux, OSX
+* Support for major platforms: Windows, Linux, OSX, FreeBSD
 * Automatically detects new episodes
 * can scan your existing library and then download any old seasons that are missing
 * can watch for better versions and upgrade your existing episodes. *eg. from DVD to Blu-Ray*
@@ -22,6 +22,7 @@ NZBDrone is a PVR for newsgroup users. It can monitor multiple RSS feeds for new
 
 ### Requirements ###
 - Visual Studio 2013 ([Express Edition](http://www.microsoft.com/visualstudio/eng/products/visual-studio-express-for-web "Express Edition") might work but not tested.)
+- ** Or Mono 3.6.0 (Versions before 3.6.0 might work but not tested.)
 - [Git](http://git-scm.com/downloads)
 - [NodeJS](http://nodejs.org/download/)
 - [Gulp](http://gulpjs.com)
@@ -41,6 +42,7 @@ NZBDrone is a PVR for newsgroup users. It can monitor multiple RSS feeds for new
 - Open `NzbDrone.sln` in Visual Studio
 - Make sure `NzbDrone.Console` is set as the startup project
 
+- or On UNIX systems, run ./build.sh to build a deployable
 
 ### License ###
 * [GNU GPL v3](http://www.gnu.org/licenses/gpl.html)
