@@ -4,6 +4,7 @@ set -e
 nzbdrone_xbuild() {
 	xbuild src/NzbDrone.sln /p:Configuration=Mono /p:Platform=x86 /t:Build 
 	cp src/External/System.Data.SQLite.dll _output/
+	cp src/External/MediaInfoDotNet.dll.config _output/
 }
 nzbdrone_gulp() {
 	gulp build
