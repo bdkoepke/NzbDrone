@@ -91,7 +91,7 @@
       <HintPath>..\External\Growl.CoreLibrary.dll</HintPath>
     </Reference>
     <Reference Include="System.Data.SQLite">
-      <HintPath>..\packages\System.Data.SQLite.Core.1.0.94.0\lib\net40\System.Data.SQLite.dll</HintPath>
+      <HintPath>..\packages\System.Data.SQLite.MSIL.1.0.94.1\lib\net40\System.Data.SQLite.dll</HintPath>
     </Reference>
     <Reference Include="EntityFramework">
       <HintPath>..\packages\EntityFramework.6.1.1\lib\net40\EntityFramework.dll</HintPath>

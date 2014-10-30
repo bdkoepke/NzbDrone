@@ -73,7 +73,7 @@ namespace NzbDrone.Core.Notifications.Growl
             _logger = logger;
             _notificationTypes = GetNotificationTypes();
 
-            var logo = typeof(GrowlService).Assembly.GetManifestResourceBytes("NzbDrone.Core.Resources.Logo.64.png");
+            var logo = File.ReadAllBytes("64.png");
 
             _growlApplication.Icon = new BinaryData(logo);
         }
